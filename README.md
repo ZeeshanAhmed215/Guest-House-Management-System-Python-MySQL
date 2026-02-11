@@ -1,10 +1,21 @@
 
 ---
 
-# 🎨 **Creative Prime Studio Management System**
+# 🏨 Guest House Management System
 
-A **Python-based Desktop Application** built using **Tkinter & CustomTkinter** to manage **employees, hiring & firing processes, and order/task assignments** for Creative Prime Studio.  
-The system uses **MySQL** for secure data storage and supports structured management of studio operations.
+A powerful and user-friendly **Python-based Desktop Application** developed using **Tkinter & CustomTkinter** to streamline and automate daily guest house operations.
+
+Managing guest records, room bookings, check-in/check-out processes, and billing manually can be time-consuming and error-prone. This system provides a **centralized and digital solution** that improves efficiency, ensures data accuracy, and reduces administrative workload.
+
+The application enables administrators to:
+
+- Manage guest records with complete personal and stay details  
+- Monitor room availability and booking status in real-time  
+- Handle check-in and check-out processes efficiently  
+- Automatically calculate billing based on room type and duration of stay  
+- Store and retrieve data securely using **MySQL database integration**
+
+Built with a **modern graphical user interface** and a **database-driven architecture**, the Guest House Management System ensures smooth workflow management, structured data storage, and enhanced operational productivity — making it a reliable solution for small to medium-scale guest houses.
 
 ---
 
@@ -202,11 +213,11 @@ main.py
 ### 🏫 Home Tab
 ![Dashboard](images/home_tab.png)
 
-### Employees Tab
-![Students](images/employees_tab.png)
+### Registration Tab
+![Students](images/registration_tab.png)
 
 ### 🪟 View Tab
-![Login](images/orders_tab.png)
+![Login](images/view_tab.png)
 
 ---
 ## 🤝 **Contributions**
