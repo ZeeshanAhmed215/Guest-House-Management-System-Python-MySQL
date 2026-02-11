@@ -173,50 +173,58 @@ main.py
 
 
 ---
-
 ## 📌 Future Improvements
 
 * 🔐 **Authentication & Authorization**
-  - Admin and employee login system
-  - Role-based access (Admin / Manager / Employee)
+  - Admin and staff login system  
+  - Role-based access control (Admin / Receptionist / Manager)  
+  - Secure password hashing and session management  
 
-* 📊 **Order Status Tracking**
-  - Track order progress (Pending, In Progress, Completed)
-  - Delivery date and priority management
+* 📊 **Advanced Reporting & Analytics**
+  - Daily, weekly, and monthly income reports  
+  - Room occupancy statistics  
+  - Revenue analysis dashboard with charts  
 
-* 👥 **Employee Performance Monitoring**
-  - Track completed orders per employee
-  - Performance reports and summaries
-
-* 📄 **Report Generation**
-  - Generate employee and order reports
-  - Export reports to **Excel (CSV/XLSX)** and **PDF**
+* 🧾 **Invoice & PDF Generation**
+  - Generate printable invoices for guests  
+  - Export billing reports to **PDF and Excel (CSV/XLSX)**  
+  - Email invoice to guests  
 
 * 🔔 **Notifications & Alerts**
-  - Alerts for new order assignments
-  - Notifications for deadlines and updates
+  - Alerts for room availability updates  
+  - Check-out reminders  
+  - Notifications for pending payments  
 
-* 🌐 **Web-Based Version (Django)**
-  - Convert desktop app to a Django web application
-  - REST API for frontend or mobile app
-  - High scalability and cloud deployment
+* 🌐 **Web-Based Version (Django/Flask)**
+  - Convert desktop application to web-based system  
+  - REST API integration  
+  - Online booking functionality  
+  - Cloud deployment support  
 
 * 🗃️ **Database Enhancements**
-  - Add foreign key constraints
-  - Improve normalization and indexing
-  - Backup & recovery system
+  - Add foreign key constraints between guests and rooms  
+  - Improve normalization and indexing  
+  - Automated database backup & recovery system  
 
 * 📱 **Responsive UI Improvements**
-  - Improved UI/UX design
-  - Dashboard with charts and statistics
+  - Modern dashboard with charts and statistics  
+  - Improved UI/UX design  
+  - Dark/Light mode support  
 
-* ☁️ **Cloud Deployment**
-  - Host application on cloud servers
-  - Use managed databases (AWS RDS / Railway / PlanetScale)
+* ☁️ **Cloud Integration**
+  - Host database on cloud (AWS RDS / Railway / PlanetScale)  
+  - Cloud-based backup storage  
+  - Multi-branch access system  
 
-* 📦 **Inventory & Resource Management**
-  - Manage studio resources and tools
-  - Assign resources to orders
+* 🛎️ **Online Reservation System**
+  - Allow guests to book rooms online  
+  - Booking confirmation via email/SMS  
+  - Real-time room availability updates  
+
+* 📦 **Additional Facility Management**
+  - Manage additional services (Laundry, Food, Transport)  
+  - Add extra service charges to guest bill  
+  - Track service usage history  
 
 ---
 
