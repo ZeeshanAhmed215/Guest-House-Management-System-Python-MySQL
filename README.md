@@ -19,38 +19,51 @@ Built with a **modern graphical user interface** and a **database-driven archite
 
 ---
 
-## ✅ **Features**
+## ✅ Features
 
-### 👥 **Employee Management**
+### 👤 Guest Management
+- Add, update, delete, and search guest records  
+- Store complete guest details (Name, Phone, CNIC, Address, Stay Duration)  
+- Maintain structured guest history  
 
-* Add, update, and manage employee records
-* Store employee personal and professional details
-* Hiring and firing system with database persistence
+### 🛏 Room Management
+- Add and manage room details  
+- View available and occupied rooms in real-time  
+- Categorize rooms by type and price  
+- Automatic room status updates  
 
-### 📦 **Order Management**
+### 🔄 Check-In / Check-Out System
+- Quick and efficient guest check-in process  
+- Automatic room allocation  
+- Smooth check-out with stay summary  
+- Update room availability after check-out  
 
-* Create and manage client orders
-* Assign orders to employees
-* Track order allocation and status
+### 💳 Billing & Payment Management
+- Automatic bill calculation based on stay duration  
+- Room-wise pricing system  
+- Display total payable amount  
+- Secure storage of payment records  
 
-### 🗄️ **Database-Driven System**
+### 🗄 Database Integration
+- MySQL database for permanent data storage  
+- Structured tables for guests and rooms  
+- Secure and reliable data handling  
 
-* MySQL used for permanent data storage
-* Secure database connection module
-* Structured tables for employees and orders
+### 🖥 Modern GUI Interface
+- Built using Tkinter & CustomTkinter  
+- Clean and user-friendly design  
+- Interactive forms and message alerts  
+- Organized multi-window layout  
 
-### 🖥 **Modern CustomTkinter GUI**
+### 📊 Data Handling & Export
+- Data processing using Pandas  
+- Excel file support using openpyxl  
+- Image handling with Pillow (PIL)  
 
-* Built with **CustomTkinter** for a modern UI
-* User-friendly forms and dialogs
-* Message boxes for alerts and confirmations
-* Clean and organized multi-window layout
-
-### 📊 **Data Handling & Export**
-
-* Data processing using **Pandas**
-* Excel file support using **openpyxl**
-* Image handling with **Pillow (PIL)**
+### 🔐 Data Security
+- Centralized database system  
+- Reduced manual errors  
+- Organized and secure record management  
 
 ---
 
@@ -65,7 +78,7 @@ Built with a **modern graphical user interface** and a **database-driven archite
 
 ---
 
-## 🚀 **How to Run the Creative Prime Studio Management System**
+## 🚀 **How to Run the Guest House Management System**
 
 Follow these steps to properly set up and run the application.
 
@@ -76,7 +89,7 @@ Follow these steps to properly set up and run the application.
 Open **MySQL Workbench** and run:
 
 ```sql
-CREATE DATABASE creative_prime_studio;
+create database if not exists guest_house;
 ```
 ---
 
@@ -90,22 +103,22 @@ CREATE DATABASE creative_prime_studio;
 After creating the database, run this SQL command to create the tables:
 
 ```sql
-CREATE TABLE employees (
-    Id INT AUTO_INCREMENT PRIMARY KEY,
-    Name VARCHAR(100),
-    Skill VARCHAR(100),
-    Phone VARCHAR(50),
-    Address VARCHAR(255),
-    Hire_date VARCHAR(50)
-);
-CREATE TABLE orders (
-    Id INT AUTO_INCREMENT PRIMARY KEY,
-    order_Name VARCHAR(100),
-    client_Name VARCHAR(100),
-    order_des VARCHAR(255),
-    price INT,
-    assign_id INT
-);
+use guest_house;
+--  CREATE TABLE if not exists  admin  (
+
+--   ID INT AUTO_INCREMENT PRIMARY KEY,
+--      Name VARCHAR(100) NOT NULL,
+--      CNIC varchar(100) not null unique,
+--      Address varchar(500) not null ,
+--      Phone varchar(100) not null unique,
+--      Room_size varchar(100) not null,
+--      Room_type varchar(100) not null,
+--      duration varchar(100) not null,
+--      check_in_date varchar(100) not null ,
+--      check_out_date varchar(100) not null,
+--      Food int not null 
+--      
+--      );
 
 ```
 
@@ -124,7 +137,7 @@ db = mysql.connector.connect(
     host="localhost",
     user="root",
     password="YOUR_PASSWORD",
-    database="academy_management"
+    database="guest_house"
 )
 ```
 
